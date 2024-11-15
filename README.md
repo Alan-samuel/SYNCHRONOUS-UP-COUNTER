@@ -61,17 +61,13 @@ always @ (posedge clk) begin
 endmodule
 ```
 **RTL LOGIC UP COUNTER**
-
-![image](https://github.com/user-attachments/assets/92cf9987-4053-442c-825a-e6354ce9a98c)
+![Screenshot 2024-11-10 212600](https://github.com/user-attachments/assets/a1207e92-5c6d-4c5d-8a3e-1925ba135f7b)
 
 **TIMING DIAGRAM FOR IP COUNTER**
-
-![image](https://github.com/user-attachments/assets/625247f5-bdd3-4de6-9e8e-0831d5c3f3f4)
-
+![Screenshot 2024-11-10 212616](https://github.com/user-attachments/assets/e626a437-f747-45d9-9324-515c39eb9bcd)
 
 **TRUTH TABLE**
-
-![image](https://github.com/user-attachments/assets/6bdd29be-cd29-42f5-b344-5ad42d4bed93)
+![Screenshot 2024-11-10 212629](https://github.com/user-attachments/assets/f6fbc9b9-8af1-4b66-bffd-b7b10eaf5303)
 
 **RESULTS**
 

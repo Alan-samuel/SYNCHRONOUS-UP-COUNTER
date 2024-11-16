@@ -26,29 +26,26 @@ Since the first (LSB) flip-flop needs to toggle at every clock pulse, its J and 
 The next flip-flop need only “recognize” that the first flip-flop’s Q output is high to be made ready to toggle, so no AND gate is needed.
 However, the remaining flip-flops should be made ready to toggle only when all lower-order output bits are “high,” thus the need for AND gates.
 
+
 **Procedure**
 
-/* write all the steps invloved */
+1. Type the program in Quartus software.
 
-1.Initialize the shift register to a known state (e.g., all zeros).
+2. Compile and run the program.
 
-2.Input a bit serially into the shift register.
+3. Generate the RTL schematic and save the logic diagram.
 
-3.Shift the contents of the register one position to the right (or left).
+4. Create nodes for inputs and outputs to generate the timing diagram.
 
-4.Output the shifted bit from the last stage of the register.
+5. For different input combinations generate the timing diagram.
 
-5.Repeat steps 2-4 for each bit you want to input and shift.
 
 **PROGRAM**
-
+```
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. 
 
 Developed by: Alan Samuel Vedanayagam
-
-RegisterNumber: 212223040012
-*/
-```
+RegisterNumber:212223240012
 module UPCOUNTER(out,clk,rstn);
  input clk, rstn;
 output reg [3:0] out; 
@@ -57,18 +54,19 @@ always @ (posedge clk) begin
       out <= 0;  
     else  
       out <= out + 1;  
-  end  
+  end  
 endmodule
+*/
 ```
 **RTL LOGIC UP COUNTER**
-![Screenshot 2024-11-10 212600](https://github.com/user-attachments/assets/a1207e92-5c6d-4c5d-8a3e-1925ba135f7b)
+![WhatsApp Image 2024-11-11 at 16 42 00_0b3f23a3](https://github.com/user-attachments/assets/116aaeaf-639c-4ea8-994c-12901df46531)
 
 **TIMING DIAGRAM FOR IP COUNTER**
-![Screenshot 2024-11-10 212616](https://github.com/user-attachments/assets/e626a437-f747-45d9-9324-515c39eb9bcd)
+![WhatsApp Image 2024-11-11 at 16 41 48_f797836e](https://github.com/user-attachments/assets/7535ce45-0691-4d88-84aa-39c1ce3e7566)
 
-**TRUTH TABLE**
-![Screenshot 2024-11-10 212629](https://github.com/user-attachments/assets/f6fbc9b9-8af1-4b66-bffd-b7b10eaf5303)
+
 
 **RESULTS**
 
-Hence a 4 bit synchronous up counter is implemented correctly
+
+the implementation of synchronous up counter using quartus || and verilog was executed succesfully.
